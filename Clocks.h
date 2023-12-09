@@ -1,0 +1,51 @@
+/*
+ * Clocks.h
+ *
+ *  Created on: Nov 25, 2020
+ *      Author: 7jorchay
+ */
+
+#ifndef CLOCKS_H_
+#define CLOCKS_H_
+
+
+void Clocks_main();     //main for testing
+///////////////////////////////////////////////////////
+/*
+ *              SYSTEM CLOCK CHANGES
+ */
+///////////////////////////////////////////////////////
+void Clock_Init48MHz(void);
+
+void AClock_Divide4(void);
+
+///////////////////////////////////////////////////////
+/*
+ *              WATCHDOG
+ */
+///////////////////////////////////////////////////////
+void Watchdog_init(void);
+
+void Watchdog_resetCount(void);
+
+void Watchdog_halt(void);
+
+///////////////////////////////////////////////////////
+/*
+ *              SYSTICK
+ */
+///////////////////////////////////////////////////////
+/*
+void SysTick_Init_NoInterrupts();
+void SysTick_delay_ms(uint16_t delay);
+void SysTick_delay_us(int delay);
+ */
+
+///////////////////////////////////////////////////////
+/*
+ *              TIMER32
+ */
+///////////////////////////////////////////////////////
+void Timer32_init(void);
+
+#endif /* CLOCKS_H_ */
